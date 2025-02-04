@@ -32,4 +32,4 @@ jobs:
         git config --global user.email "action@github.com"
         git add .
         git commit -m "Automated cybersecurity contribution update" || echo "No changes to commit"
-        git push origin master  # Push to master branch
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/iannnooooo/cybersecurity-contributions.git master
